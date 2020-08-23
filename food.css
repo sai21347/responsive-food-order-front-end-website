@@ -1,0 +1,242 @@
+/* Css reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* css varaiables */
+:root{
+    --navbar-height:30px;
+}
+/* navigaton bar */
+#navbar{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    top:0px;
+    /* position: absolute; */
+    /* justify-content: center; */
+
+}
+/* navigaton bar:logo and image  */
+#logo{
+    
+    margin: 6px 9px;
+
+}
+#logo img{
+    height: 60px;
+    margin: 7px 7px;
+
+}
+/* navigaton bar: list styling */
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(26, 27, 26);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    /* color: skyblue; */
+    list-style: none;
+    font-size: 1.4rem;
+    
+}
+#navbar ul li a{
+    color: rgb(245, 237, 244);
+    display: block;
+    padding: 3px 26px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    background-color:white;
+    color: black;
+    
+}
+/* Home section  */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 100px;
+    justify-content: center;
+    height: 360px;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    top: 0px;
+    left: 0px;
+    
+    position: absolute;
+    height: 54%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+    background: url(foodhh.jpg)no-repeat center center/cover;
+    
+}
+#home h1{
+    color:rgb(250, 245, 245);
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+#home p{
+    color: rgb(250, 233, 246);
+    text-align: center;
+    font-size: 1.0rem;
+    font-family:cursive;
+}
+/* services center  */
+#services{
+    margin: 30px;
+    padding: 5px 6px;
+    display: flex;
+    
+}
+#services .box{
+    border: 2px solid red;
+    padding: 34px;
+    margin: 3px 25px;
+    border-radius: 25px;
+    background: rgb(233, 173, 173);
+
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+
+}
+#services .box p{
+    font-family: cursive;
+}
+/* client section */
+#client-section{
+   
+    position: relative;
+
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(person-mixing-cereal-milk-and-strawberry-jam-on-white-704971.jpg);
+    width: 100%;
+    height: 45%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#clients img{
+    height: 135px;
+}
+.client-item{
+    padding: 34px;
+}
+/* contact section  */
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url("wallpaper.jpg")no-repeat center center/cover;
+    
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:34px ;
+}
+#content-box form{
+    width: 40%;
+
+}
+#content-box label{
+    font-size: 1.3rem;
+    font-family: cursive;
+    
+}
+
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.0rem;
+
+}
+#contact-box input:hover,
+#contact-box textarea:hover{
+    background-color: darkcyan;
+    color: black;
+    font-size: 1.0rem;
+
+}
+
+
+footer{
+    background: black;
+    color: cornsilk;
+    padding: 9px 20px;
+}
+
+
+/* utility class */
+.h-primary{
+    font-family: 'Pacifico', cursive;
+
+    font-size: 2.4rem;
+    padding: 28px;
+
+}
+.h-secondary{
+    font-family: 'Pacifico', cursive;
+
+    font-size: 1.8rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background:burlywood;
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: coral;
+    color: darkgreen;
+}
+.center{
+    text-align: center;
+}
